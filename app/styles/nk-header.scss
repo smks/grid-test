@@ -1,0 +1,31 @@
+$white: #ffffff;
+$green-nutmeg: #2fb153;
+$grey-light: #4a4c4e;
+$spacing-unit: .25rem;
+
+.nk-header {
+  background-color: #ffffff;
+  position: relative;
+  height: 50px;
+  
+  & .strip {
+    background-color: $green-nutmeg;
+    position: absolute;
+    width: 100%;
+    height: 5px;
+  }
+  
+  & .logo {
+    height: 25px;
+    margin-left: $spacing-unit * 2;
+    margin-top: $spacing-unit * 2;
+  }
+  
+  & .menu {
+    height: 20px;
+    float: right;
+    width: auto;
+    margin-right: $spacing-unit * 4;
+    margin-top: $spacing-unit * 4;
+  }
+}

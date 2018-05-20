@@ -1,31 +1,74 @@
-// bower:scss
-// endbower
+@import url('http://s3-us-west-2.amazonaws.com/s.cdpn.io/373759/Gotham-Medium.ttf');
+@import url('http://s3-us-west-2.amazonaws.com/s.cdpn.io/373759/Gotham-Light.ttf');
+@import url('http://s3-us-west-2.amazonaws.com/s.cdpn.io/373759/Gotham-Book.ttf');
 
-.browserupgrade {
-  margin: 0.2em 0;
-  background: #ccc;
-  color: #000;
-  padding: 0.2em 0;
+@font-face {
+  font-family: 'Gotham-Light';
+  src: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/373759/Gotham-Light.ttf);
 }
+
+@font-face {
+  font-family: 'Gotham-Medium';
+  src: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/373759/Gotham-Medium.ttf);
+}
+
+@font-face {
+  font-family: 'Gotham-Book';
+  src: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/373759/Gotham-Book.ttf);
+}
+
+$grid-columns: 16;
+$grid-gutter-width: 30px;
+$enable-grid-classes: true;
+
+$grid-breakpoints: (
+  // Extra small screen / phone
+  xs: 0,
+  // Small screen / phone
+  sm: 576px,
+  // Medium screen / tablet
+  md: 768px,
+  // Large screen / desktop
+  lg: 1024px,
+  // Extra large screen / wide desktop
+  xl: 1280px
+);
+
+$container-max-widths: (
+  sm: 540px,
+  md: 720px,
+  lg: 960px,
+  xl: 1140px
+);
+
+@import "_functions.scss";
+@import "_variables.scss";
+@import "_mixins.scss";
+@import "_reboot.scss";
+@import "_grid.scss";
+
+$white: #ffffff;
+$green-nutmeg: #2fb153;
+$grey-light: #4a4c4e;
+$spacing-unit: .25rem;
 
 body {
-  background: #fafafa;
-  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
-  color: #333;
+  color: $grey-light;
+  font-family: 'Gotham-Light';
 }
 
-.hero-unit {
-  margin: 50px auto 0 auto;
-  width: 300px;
-  font-size: 18px;
-  font-weight: 200;
-  line-height: 30px;
-  background-color: #eee;
-  border-radius: 6px;
-  padding: 60px;
-  h1 {
-    font-size: 60px;
-    line-height: 1;
-    letter-spacing: -1px;
-  }
+.col-example {
+  border: 1px solid rgb(202, 208, 213);
+  outline: 1px solid rgb(202, 208, 213);
+  font-weight: bold;
+  min-height: 100px;
+  line-height: 100px;
+  text-align: center;
 }
+
+.col .nk-button {
+  margin-top: $spacing-unit * 1;
+}
+
+@import './nk-button.scss';
+@import './nk-header.scss';

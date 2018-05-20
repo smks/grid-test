@@ -1,0 +1,42 @@
+$line-height-xl: 1.5rem;
+$font-color-dark: rgb(124, 124, 124);
+$line-height-sm: .5rem;
+$line-height-lg: 1rem;
+$font-color-light: rgb(66, 66, 66);
+$font-family-base: 'Gotham SSm A', 'Gotham SSm B', sans-serif;
+$font-color-base: rgb(66, 66, 66);
+$line-height-base: 0.75rem;
+$line-height-xxl: 3.375rem;
+$button-background-color-pressed: rgb(54, 94, 66);
+$button-min-width: 6rem;
+$button-height: 3rem;
+$button-border-radius: .1875rem;
+$button-font-weight: 400;
+$button-background-color-hover: rgb(33, 123, 62);
+$button-padding-x: 1rem;
+$button-text-color: rgb(255, 255, 255);
+$button-padding-y: 0.75rem;
+$button-background-color: rgb(47, 177, 83);
+
+.nk-button {
+  background-color: $button-background-color;
+  background-image: none;
+  border: none;
+border-radius: $button-border-radius;
+  color: $button-text-color;
+font-family: 'Gotham-Light';
+font-size: 1rem;
+height: $button-height;
+letter-spacing: -0.01em;
+line-height: 1.25rem;
+  cursor: pointer;
+  font-weight: $button-font-weight;
+  padding: $button-padding-y $button-padding-x $button-padding-y $button-padding-x;
+min-width: 15.625rem;
+text-shadow: 0px 0.3px 0.3px rgba(0,0,0,0.2);
+  white-space: nowrap;
+
+  &:hover {
+      background-color: $button-background-color-hover;
+  }
+}
